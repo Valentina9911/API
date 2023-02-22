@@ -25,14 +25,6 @@ const corsOption={ //config your cors options to acept request with front-end
 
 app.use(cors(corsOption)); //start cors with your config options
 
-// config your uri to concat in url var
-const use="valentina";
-const password='1000688572Lau';
-const dbname='Serie';
-
-// config your uri to concat in url var
-const url = `mongodb+srv://${use}:${password}@cluster0.cae4ogm.mongodb.net/${dbname}`;
-
 //connect to mongo atlas(cluster) > <your db> > <your collection>
 mongoose.set('strictQuery', true)
 require('dotenv').config();
