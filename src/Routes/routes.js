@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const RetsiController = require("../Controllers/AppController")
+const RetsiController = require("../Controllers/appController")
 
-router.get("/", RetsiController.getCharacter)
-router.post("/newCharacter", RetsiController.postNewCharacter)
+router.get("/character", RetsiController.getListado)
+router.post("/newCharacter", RetsiController.postNewListado)
 router.put("/Character/:id")
 router.delete("/RemoveCharacter")
 

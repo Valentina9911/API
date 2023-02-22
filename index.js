@@ -28,17 +28,35 @@ app.use(cors(corsOption)); //start cors with your config options
 // config your uri to concat in url var
 const use="valentina";
 const password='1000688572Lau';
-const dbname='Api';
+const dbname='Serie';
 
 // config your uri to concat in url var
 const url = `mongodb+srv://${use}:${password}@cluster0.cae4ogm.mongodb.net/${dbname}`;
 
 //connect to mongo atlas(cluster) > <your db> > <your collection>
-mongoose.set("strictQuery", false);
-mongoose.connect(url,connectionOptions).then(()=> console.log("Conexion exitosa")).catch((err)=> console.error(err));
+mongoose.set('strictQuery', true)
+require('dotenv').config();
+
+
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch((error) => console.error(error));// Conectar a la base de datos MongoDB
+mongoose.set('strictQuery', true)
+require('dotenv').config();
+
+
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch((error) => console.error(error));
 
 //Define your path to consult using your endpoint file
-app.use("/App", Routes);
+app.use("/Listado", Routes);
 
 //start your server in port 3035
 app.listen(port, ()=>{
