@@ -18,7 +18,7 @@ exports.postNewListado = ((req, res) => {
 });
 
 //edit a character in DB
-exports.editListado = async (req, res) => {
+exports.patchEditListado = async (req, res) => {
   try{
     const result = await Listado.findOneAndUpdate({_id: requestAnimationFrame.params.id}, req.body, {new: true}) //find item by id and changes [req,body], new true is used to return edit object
     if (result) {
