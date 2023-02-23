@@ -25,15 +25,6 @@ Instalación Para instalar y utilizar la API de la casa de papel, sigue los sigu
 * Put/ NewCharacter/ Agrega otro personaje más a la lista so de la serie
 * Patch/ EditCharacter/ Actualiza la informacion sobre algun personaje con su respectivo ID
 * Delete/ RemoveCharacter/ Elimina algun personaje con su respectivo ID de la lista creada
-
-### Contenido📋 
-* Installación
-* Diseño
-* Tecnologias Aplicadas
-* Funcionalidades
-* Variables Globales
-* Fuentes
-
  
 ### Installation 🔧 
 1. $ git clone ... //Clonar el repositorio
@@ -41,7 +32,7 @@ Instalación Para instalar y utilizar la API de la casa de papel, sigue los sigu
 3. $ npm install       // instalar el paquete npm
 4. $ npm run dev // ejecutar el proyecto localmente 
 
-###Contribuir
+### Contribuir 📋 
 Si quieres contribuir a la API de la serie, puedes seguir los siguientes pasos:
 
 Haz un fork de este repositorio. Crea una nueva rama con tus cambios. Haz tus cambios y guarda el código. Crea un pull request y describe tus cambios.
