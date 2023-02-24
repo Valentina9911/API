@@ -18,7 +18,7 @@ app.use(express.json()); //Used to parse incoming or transform requests with JSO
 
 const corsOption={ //config your cors options to acept request with front-end
   origin:"*",
-  method:["GET", "POST", "PUT", "DELETE"],
+  method:["GET", "POST", "PATCH", "DELETE"],
   allowedHeaders:["Origin", "X-Requested-With", "Content-Type", "Accept"],
   credentials: true
 };

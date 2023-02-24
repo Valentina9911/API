@@ -1,3 +1,11 @@
 ###
-POST http//localhost3035 HTTP/1.1
+PATCH  http://localhost:3035/Listado/EditCharacter/63f81d7e062d81c69ed23ea6 HTTP/1.1
 Content-Type: application/json
+
+{
+        "Name": "laura",
+        "Age": "PRUEBAAS",
+        "Character": "local",
+        "img_url": "pruebqa2"
+
+    }

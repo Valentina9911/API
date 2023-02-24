@@ -4,7 +4,7 @@ const RetsiController = require("../Controllers/appController")
 
 router.get("/character", RetsiController.getListado)
 router.post("/newCharacter", RetsiController.postNewListado)
-router.patch("/EditCharacter/:id", RetsiController.patchEditListado)
-router.delete("/RemoveCharacter", RetsiController.deleteListado)
+router.put("/EditCharacter/:id", RetsiController.putEditListado)
+router.delete("/RemoveCharacter/:id", RetsiController.deleteListado)
 
 module.exports = router;
